@@ -1,0 +1,389 @@
+title {
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    color: #333;
+    text-transform: uppercase;
+    background-color: #071629;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/Bitmap7.jpg");
+    /*background-color: rgba(7,22,41,0.8);*/
+}
+.flex-size_1 {
+    flex: 2;
+    /*background-image: url("images/Bitmap7.png;*/
+}
+.flex-size_2 {
+    flex: 10;
+    /*background-color: rgba(0,0,255,0.5);*/
+}
+.flex-size_3 {
+    flex: 3;
+    background-color: #071629;
+    margin: -40px -45.5% 30px -17%;
+    padding: 30px 0 110px 150px;
+}
+.flex_header {
+    display: flex;
+    flex-direction: row;
+}
+.header_links_display {
+    position: absolute;
+    right: 15%;
+    /*background-color: rgba(0,245,0,0.2);*/
+    top: 28px;
+}
+.header_links {
+    /*background-color: green;*/
+    color: white;
+    font-size: 12px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin: 0px 20px;
+}
+.first_section {
+    /*background-color: rgba(245,0,0,0.3);*/
+    margin-top: 10.3% /*78px*/;
+    /*background-image: url("images/Bitmap7.png");*/
+}
+.first_div {
+    /*background-color: rgba(0,0,245,0.3);*/
+}
+.get_schooled {
+    /*background-color: rgba(0,245,0,0.3);*/
+    padding-right: 26px;
+    text-align: center;
+    color: white;
+    font-size: 107px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.expressions {
+    text-align: center;
+    /*background-color: rgba(0,255,0,0.3);*/
+    margin-top: -15px;
+    margin-bottom: 38px;
+    color: white;
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    word-wrap: break-word
+}
+.smile {
+    /*background-color: red;*/
+    margin: 0 27px;
+}
+.grin {
+    /*background-color: blue;*/
+    margin: 0 27px;
+}
+.laugh {
+    /*background-color: black;*/
+    margin: 0 27px;
+}
+.first_button {
+    background: #C271FF;
+    height: 44px;
+    width: 15%;
+    border-radius: 22px;
+    position: relative;
+    left: 42%;
+    color: white;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+.second_div {
+    /*background-color: rgba(0,0,255,0.3);*/
+    margin-top: 3.0%;
+}
+.learning {
+    text-align: center;
+    /*background-color: rgba(245,0,0,0.3);*/
+    color: white;
+    font-size: 32px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+.learn {
+    color: #C271FF;
+    font-size: 32px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.flex_banner {
+    display: flex;
+    /*background-color: rgba(0,255,0,0.3);*/
+    flex-direction: row;
+    padding-left: 50px; 
+}
+.learn_banner_dist {
+    margin-top: 87px;
+}
+.banner_images, .quote_image{
+    border-radius: 50%;
+}
+.banner_names {
+    color: white;
+    font-size: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 900;
+    line-height: 27px;
+    word-wrap: break-word
+}
+.banner_texts {
+    color: white;
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    word-wrap: break-word
+}
+.space {
+    margin: -1% 45px 0px;
+}
+/*
+.bold_center {
+    margin-left: 35px;
+}
+*/
+.second_section {
+    margin: 12.85% -45.35% 0 -17%;
+    background-color:#C271FF;
+    padding: 10% 18% 7%;
+}
+.second_section div, .second_section div div {
+    display: flex;
+}
+.second_section div {
+    flex-direction: row;
+}
+.second_section div div {
+    flex-direction: column;
+}
+.second_section .name {
+    margin: 40px 0 15px;
+    color: white;
+    font-size: 19px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.second_section .title {
+    color: white;
+    font-size: 19px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.second_section blockquote {
+    color: white;
+    font-size: 19px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.second_section img {
+    margin-top: -20px;
+    margin-right: 30px;
+}
+.third_section {
+    background-color: #FFFFFF;
+    margin: -6% -45.35% 0 -17%;
+}
+.tutorial {
+    text-align: center;
+    color: #071629;
+    font-size: 32px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+.popular {
+    color: #C271FF;
+    font-size: 32px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.third_section_div {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 10px 70px 150px;
+}
+.smiles {
+    color: #071629;
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.smile_text {
+    color: rgba(7, 22, 41, 0.50);
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word
+}
+.third_section_div .flex {
+    display: flex;
+    flex-direction: row;
+}
+.third_section_div .flex img {
+    margin: 15px 5px 15px 0;
+    border-radius: 50%;
+}
+.third_section_div .flex h3 {
+    margin-top: 15px;
+}
+.third_section_div .flex_1 {
+    display: flex;
+    flex-direction: row;
+}
+.third_section_div .flex_1 p {
+    margin: -4px 0 0 90px;
+    color: #C271FF;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    line-height: 27px;
+    word-wrap: break-word;
+}
+.philip {
+    color: #C271FF;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    line-height: 27px;
+    word-wrap: break-word;
+}
+.fourth_section {
+    background-color: #071629;
+    margin: -3px -45.5% 20px -17%;
+    padding: 30px 0 150px 100px;
+}
+.membership {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+    margin-bottom: 50px;
+}
+.free {
+    color: #C271FF;
+    font-size: 32px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.fourth_section_div {
+    display: flex;
+    flex-direction: row;
+}
+.fourth_section button {
+    position: relative;
+    left: 43%;
+    top: 80px;
+    background: #C271FF;
+    border-radius: 22px;
+    height: 44px;
+    width: 162px;
+    color: white;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    word-wrap: break-word
+}
+.fourth_section_div .divs {
+    margin: 0 90px 0;
+}
+.fourth_section h2 {
+    color: white;
+    font-size: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    line-height: 26px;
+    word-wrap: break-word;
+}
+.fourth_section p {
+    color: white;
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    word-wrap: break-word;
+}
+.fifth_section {
+    background-color: #fff;
+    margin: -40px -45.5% 30px -17%;
+    padding: 30px 0 40px 150px;
+}
+.fifth_flex {
+    display: flex;
+}
+.fifth_section_out_div {
+    flex-direction: column;
+    padding: 0 0 0 60px;
+}
+.fifth_section_in_div {
+    flex-direction: row;
+}
+.Q_and_A {
+    text-align: center;
+    color: #071629;
+    font-size: 60px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+.fifth_section_in_div h2 {
+    color: #071629;
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.fifth_section_in_div p {
+    color: rgba(7, 22, 41, 0.50);
+    font-size: 14px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+.left_div {
+    margin-left: 40px;
+}
+.right_div {
+    margin-left: 240px;
+}
+.footer_div {
+    display: flex;
+    flex-direction: row;
+}
+.footer_div div {
+    position: relative;
+    right: -70%;
+}
+.twitter {
+    border-radius: 50%;
+}
+footer p {
+    text-align: center;
+    margin-top: 90px;
+    color: white;
+    font-size: 12px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
