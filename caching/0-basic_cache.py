@@ -1,31 +1,40 @@
 #!/usr/bin/python3
-""" BasicCache module
+"""
+BasicCache module - implements a basic caching system with no limit
 """
 BaseCaching = __import__('base_caching').BaseCaching
 
 
 class BasicCache(BaseCaching):
-    """ BasicCache defines:
-      - Caching system with no limit
+    """
+    BasicCache defines:
+      - A caching system with no limit
       - Inherits from BaseCaching
+    Methods:
+      - put(key, item): Add an item to the cache
+      - get(key): Retrieve an item from the cache
     """
 
     def put(self, key, item):
-        """ Add an item in the cache
+        """
+        Add an item in the cache
         Args:
-            key: key to add
-            item: value to add
+            key: The key to add
+            item: The value to store
+        Returns:
+            None
         """
         if key is not None and item is not None:
             self.cache_data[key] = item
 
     def get(self, key):
-        """ Get an item by key
-        Args:
-            key: key to look for
-        Returns:
-            value associated with key if it exists, None otherwise
         """
-        if key is not None and key in self.cache_data:
-            return self.cache_data[key]
+        Retrieve an item from the cache
+        Args:
+            key: The key to look for
+        Returns:
+            The value associated with the key if it exists, None otherwise
+        """
+        if key is not None:
+            return self.cache_data.get(key)
         return None
