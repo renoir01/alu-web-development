@@ -8,11 +8,8 @@ BaseCaching = __import__('base_caching').BaseCaching
 class BasicCache(BaseCaching):
     """
     BasicCache defines:
-      - A caching system with no limit
+      - Basic caching system with no limit
       - Inherits from BaseCaching
-    Methods:
-      - put(key, item): Add an item to the cache
-      - get(key): Retrieve an item from the cache
     """
 
     def put(self, key, item):
@@ -21,8 +18,6 @@ class BasicCache(BaseCaching):
         Args:
             key: The key to add
             item: The value to store
-        Returns:
-            None
         """
         if key is not None and item is not None:
             self.cache_data[key] = item
