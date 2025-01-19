@@ -27,7 +27,8 @@ class MRUCache(BaseCaching):
             item: The value to store
         """
         if key is not None and item is not None:
-            if len(self.cache_data) >= BaseCaching.MAX_ITEMS and key not in self.cache_data:
+            if (len(self.cache_data) >= self.MAX_ITEMS and
+                    key not in self.cache_data):
                 # Remove most recently used item
                 mru_key = self.usage_order.pop()
                 del self.cache_data[mru_key]

@@ -27,7 +27,8 @@ class FIFOCache(BaseCaching):
             item: The value to store
         """
         if key is not None and item is not None:
-            if len(self.cache_data) >= BaseCaching.MAX_ITEMS and key not in self.cache_data:
+            if (len(self.cache_data) >= self.MAX_ITEMS and
+                    key not in self.cache_data):
                 # Remove first item (FIFO)
                 first_key = self.queue.pop(0)
                 del self.cache_data[first_key]
@@ -48,4 +49,3 @@ class FIFOCache(BaseCaching):
         if key is not None:
             return self.cache_data.get(key)
         return None
-    

@@ -28,12 +28,12 @@ class LFUCache(BaseCaching):
             item: The value to store
         """
         if key is not None and item is not None:
-            if len(self.cache_data) >= BaseCaching.MAX_ITEMS and key not in self.cache_data:
-                # Find least frequently used items
+            if (len(self.cache_data) >= self.MAX_ITEMS and
+                    key not in self.cache_data):
                 min_freq = min(self.usage_count.values())
-                lfu_keys = [k for k, v in self.usage_count.items() if v == min_freq]
-                
-                # If multiple items have same frequency, use LRU
+                lfu_keys = [k for k, v in self.usage_count.items()
+                          if v == min_freq]
+
                 lfu_key = None
                 for k in self.usage_order:
                     if k in lfu_keys:
@@ -47,7 +47,7 @@ class LFUCache(BaseCaching):
 
             self.cache_data[key] = item
             self.usage_count[key] = self.usage_count.get(key, 0) + 1
-            
+
             if key in self.usage_order:
                 self.usage_order.remove(key)
             self.usage_order.append(key)

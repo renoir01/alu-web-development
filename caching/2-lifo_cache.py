@@ -1,41 +1,41 @@
 #!/usr/bin/python3
 """
-LIFO Caching module - implements LIFO caching system
+FIFO Caching module - implements FIFO caching system
 """
 BaseCaching = __import__('base_caching').BaseCaching
 
 
-class LIFOCache(BaseCaching):
+class FIFOCache(BaseCaching):
     """
-    LIFOCache defines:
-      - LIFO caching system
+    FIFOCache defines:
+      - FIFO caching system
       - Max number of items defined by BaseCaching.MAX_ITEMS
     """
 
     def __init__(self):
         """
-        Initialize the LIFO Cache
+        Initialize the FIFO Cache
         """
         super().__init__()
-        self.stack = []
+        self.queue = []
 
     def put(self, key, item):
         """
-        Add an item in the cache using LIFO algorithm
+        Add an item in the cache using FIFO algorithm
         Args:
             key: The key to add
             item: The value to store
         """
         if key is not None and item is not None:
-            if len(self.cache_data) >= BaseCaching.MAX_ITEMS and key not in self.cache_data:
-                # Remove last item (LIFO)
-                last_key = self.stack.pop()
-                del self.cache_data[last_key]
-                print(f"DISCARD: {last_key}")
+            if (len(self.cache_data) >= self.MAX_ITEMS and
+                    key not in self.cache_data):
+                # Remove first item (FIFO)
+                first_key = self.queue.pop(0)
+                del self.cache_data[first_key]
+                print(f"DISCARD: {first_key}")
 
-            if key in self.cache_data:
-                self.stack.remove(key)
-            self.stack.append(key)
+            if key not in self.cache_data:
+                self.queue.append(key)
             self.cache_data[key] = item
 
     def get(self, key):
